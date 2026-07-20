@@ -56,7 +56,7 @@ After a scope-validation pass, the following items were judged to be release-acc
 
 ## Dependency order
 
-1. Independent: [BL-017](#bl-017) (custom artwork).
+1. Independent: [BL-017](#bl-017) (custom artwork) — ✅ done 2026-07-20.
 2. Optional readiness: [BL-012](#bl-012) (personal smoke check), run at the author's discretion before relying on a new build.
 
 ---
@@ -90,6 +90,7 @@ The former fixed six-application matrix, the ten-request-per-provider performanc
 <a id="bl-017"></a>
 ## BL-017 — Add custom app and menu-bar artwork
 
+**Status:** ✅ Done — implemented and validated by the product owner on 2026-07-20.
 **Labels:** `P1`, `scope:required`, `type:implementation`, `phase:shell`, `ui`
 **Depends on:** Menu-bar idle and active assets supplied by the product owner
 **Blocks:** None
@@ -100,13 +101,13 @@ The app currently uses SF Symbols for its menu-bar idle and active states and ha
 
 ### Confirmed inputs
 
-- Use `/Users/pozniakov.rodion/Desktop/icon.png` as the source app icon. It is a 1024×1024 PNG with transparency.
+- The source app icon is supplied out-of-band by the product owner as a 1024×1024 PNG with transparency, then copied into the project's asset catalog and processed into the required sizes.
 - Do not derive the menu-bar artwork from that file. Separate idle and active menu-bar icons will be supplied before implementation.
 - The two menu-bar states retain their current meaning: idle and action-in-progress.
 
 ### Scope
 
-- Add a macOS app-icon asset set generated from the supplied source without committing a dependency on the external Desktop path.
+- Add a macOS app-icon asset set generated from the supplied source and stored inside the project, with no build or runtime dependency on the original delivery location.
 - Add separate idle and active menu-bar assets after they are supplied.
 - Render menu-bar artwork as template images so it remains legible across macOS menu-bar appearances unless the final supplied artwork explicitly requires multicolor rendering.
 - Replace the current `text.bubble` and `ellipsis.circle` SF Symbols without changing action-state behavior.
@@ -114,15 +115,15 @@ The app currently uses SF Symbols for its menu-bar idle and active states and ha
 
 ### Acceptance criteria
 
-- [ ] The built app displays the custom app icon at standard macOS sizes without clipping or unintended background artifacts.
-- [ ] The menu bar displays the supplied idle icon when no action is active.
-- [ ] The menu bar displays the supplied active icon while either action is in progress and returns to idle afterward.
-- [ ] Both menu-bar states remain clear in light and dark appearances and on Retina displays.
-- [ ] Debug and Release builds contain no runtime reference to the external source path.
+- [x] The built app displays the custom app icon at standard macOS sizes without clipping or unintended background artifacts.
+- [x] The menu bar displays the supplied idle icon when no action is active.
+- [x] The menu bar displays the supplied active icon while either action is in progress and returns to idle afterward.
+- [x] Both menu-bar states remain clear in light and dark appearances and on Retina displays.
+- [x] Debug and Release builds contain no runtime reference to any external source path; all artwork resolves from the in-project asset catalog.
 
 ### Scope decision
 
-`KEEP`. Implementation is blocked only on the two menu-bar assets. The supplied app-icon source is ready for implementation.
+`DONE`. The `AppIcon` set and the `MenuBarIdle`/`MenuBarActive` template imagesets live in `EnLLMApp/Resources/Assets.xcassets`; `EnLLMApp.swift` renders the menu-bar states from those assets and the app icon is wired via `ASSETCATALOG_COMPILER_APPICON_NAME`. Verified in Debug and Release and validated by the product owner.
 
 ---
 
@@ -142,6 +143,6 @@ Decisions recorded in the 2026-07-19 scope-validation pass:
 | BL-014 | `REMOVE` — the six-application compatibility promise is removed from the spec/NFR-004 |
 | BL-015 | `SIMPLIFY` — folded into BL-012 |
 | BL-016 | `REMOVE` — no formal MVP-complete claim is needed |
-| BL-017 | `KEEP` |
+| BL-017 | `KEEP` → ✅ `DONE` (2026-07-20) |
 
 Each `REMOVE`/`SIMPLIFY` above that touched compatibility, privacy, performance, or acceptance was accompanied by the corresponding update to the technical specification, non-functional requirements, acceptance plan, development plan, and project status in the same pass.
