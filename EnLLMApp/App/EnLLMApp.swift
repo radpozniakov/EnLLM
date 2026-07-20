@@ -23,7 +23,7 @@ struct EnLLMApp: App {
             MenuBarView()
                 .environmentObject(coordinator)
         } label: {
-            Image(systemName: coordinator.isActive ? "ellipsis.circle" : "text.bubble")
+            Image(coordinator.isActive ? "MenuBarActive" : "MenuBarIdle")
                 .accessibilityLabel(coordinator.isActive ? "EnLLM working" : "EnLLM")
         }
 
