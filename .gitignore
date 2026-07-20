@@ -9,6 +9,3 @@ DerivedData/
 xcuserdata/
 .omc
 progress.txt
-
-# Local AI tooling config
-.pi/
