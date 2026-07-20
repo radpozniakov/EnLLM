@@ -1,0 +1,24 @@
+{
+  "id": "C-02",
+  "corpusVersion": 1,
+  "action": "correction",
+  "contentType": "Non-English (French) prose with known errors",
+  "language": "fr",
+  "input": "Nous avons recu votre message hier soir, mais nous n'avont pas encore pu repondre a toute les questions. Le equipe va vous envoyer un resume demain matin, et j'espere que sa vous conviendra.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "preserveLanguage": true,
+    "expectedChanges": [
+      "accents/spelling: 'recu' -> 'reçu'",
+      "conjugation: \"n'avont\" -> \"n'avons\"",
+      "accent: 'repondre a' -> 'répondre à'",
+      "agreement: 'toute les questions' -> 'toutes les questions'",
+      "article agreement: 'Le equipe' -> \"L'équipe\"",
+      "accent: 'resume' -> 'résumé'; \"j'espere\" -> \"j'espère\"",
+      "homophone: 'sa vous conviendra' -> 'ça vous conviendra'"
+    ]
+  },
+  "notes": "Synthetic content only. The result must stay in French (must NOT be translated to English or Ukrainian). Errors are seeded accents, agreement, and homophone mistakes about a fictional reply."
+}

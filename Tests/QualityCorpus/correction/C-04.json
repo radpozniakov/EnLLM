@@ -1,0 +1,31 @@
+{
+  "id": "C-04",
+  "corpusVersion": 1,
+  "action": "correction",
+  "contentType": "Multiline Markdown with headings, list, link, and fenced code",
+  "language": "en",
+  "input": "# Release Notes\n\nThis release fix several issues that was reported by early testers.\n\n## Highlights\n\n- Improved startup time on older machines\n- Fixed a crash when the [settings page](https://example.com/settings) is opened twice\n- Reduced memory usage durring long sessions\n\nRun the following command to upgrade:\n\n```sh\nbrew upgrade example-tool\n```\n\nPlease reach out if you notice any regressions.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "preserveLanguage": true,
+    "structural": [
+      "level-1 heading '# Release Notes' retained",
+      "level-2 heading '## Highlights' retained",
+      "three-item bulleted list with '- ' markers retained",
+      "Markdown link '[settings page](https://example.com/settings)' retained with the same URL",
+      "fenced code block with ```sh language tag and 'brew upgrade example-tool' retained verbatim",
+      "blank-line paragraph separation retained"
+    ],
+    "expectedChanges": [
+      "subject-verb agreement: 'fix several issues that was reported' -> 'fixes several issues that were reported'",
+      "spelling: 'durring' -> 'during'"
+    ]
+  },
+  "protectedTokens": [
+    "[settings page](https://example.com/settings)",
+    "brew upgrade example-tool"
+  ],
+  "notes": "Synthetic content only. Prose errors are seeded in the sentences only; headings, list structure, the link, and the fenced command must be preserved. Protected tokens (the link and the shell command) must appear unchanged in the result."
+}

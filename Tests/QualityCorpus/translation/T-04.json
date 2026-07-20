@@ -1,0 +1,24 @@
+{
+  "id": "T-04",
+  "corpusVersion": 1,
+  "action": "translation",
+  "contentType": "Multiline conversational text",
+  "language": "en",
+  "input": "Alex: Are we still on for the design review at three?\nJordan: Yes, but I might be five minutes late.\nAlex: No problem, I'll share my screen when you join.\nJordan: Great, thanks for setting it up.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "targetLanguage": "uk",
+    "structural": [
+      "four separate speaker lines retained, one per line",
+      "speaker labels 'Alex:' and 'Jordan:' retained at the start of their lines",
+      "line order and speaker attribution unchanged"
+    ]
+  },
+  "protectedTokens": [
+    "Alex:",
+    "Jordan:"
+  ],
+  "notes": "Synthetic content only. Each utterance is translated to Ukrainian while the per-line speaker structure and labels are retained. Speaker labels are treated as protected tokens that must appear unchanged."
+}

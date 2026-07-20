@@ -1,0 +1,31 @@
+{
+  "id": "C-05",
+  "corpusVersion": 1,
+  "action": "correction",
+  "contentType": "Technical prose with code, command, path, API/product names, and identifiers",
+  "language": "en",
+  "input": "When the NonSecretConfiguration is loaded, the app read settings-v2.json from Application Support and fall back to defaults if the schema is invalid. To test the network-free path, launch with --enable-phase2-local-transformer; this flag are Debug-only. The URLSession transport enforce a 15-second timeout, and the bundle identifier com.radpozniakov.enllm must stay unchanged.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "preserveLanguage": true,
+    "structural": [
+      "identifiers, file names, flags, and product names are not reflowed into different tokens"
+    ],
+    "expectedChanges": [
+      "subject-verb agreement: 'the app read' -> 'the app reads'",
+      "subject-verb agreement: 'fall back' -> 'falls back'",
+      "subject-verb agreement: 'this flag are' -> 'this flag is'",
+      "subject-verb agreement: 'transport enforce' -> 'transport enforces'"
+    ]
+  },
+  "protectedTokens": [
+    "NonSecretConfiguration",
+    "settings-v2.json",
+    "--enable-phase2-local-transformer",
+    "URLSession",
+    "com.radpozniakov.enllm"
+  ],
+  "notes": "Synthetic content only. Technical tokens (type name, settings file, launch flag, framework, bundle id) must appear unchanged in the result; only the surrounding prose is minimally corrected. Every protected token is a literal substring of the input."
+}

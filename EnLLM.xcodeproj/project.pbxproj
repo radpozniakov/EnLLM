@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* EnLLMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
+		A10002 /* AppComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
+		A10003 /* ActionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
+		A10004 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
+		A10005 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
+		A10010 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010; };
+		A10011 /* HotkeyRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011; };
+		A10006 /* EnLLMCore in Frameworks */ = {isa = PBXBuildFile; productRef = E10001; };
+		A10007 /* EnLLMPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = E10003; };
+		A10008 /* ActionCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
+		A10012 /* SettingsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012; };
+		A10013 /* ResultPanelControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013; };
+		A10014 /* ProviderCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10014; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		P10001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F10001;
+			remoteInfo = EnLLMApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B10001 /* EnLLMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnLLMApp.swift; sourceTree = "<group>"; };
+		B10002 /* AppComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComposition.swift; sourceTree = "<group>"; };
+		B10003 /* ActionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoordinator.swift; sourceTree = "<group>"; };
+		B10004 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		B10005 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B10010 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		B10011 /* HotkeyRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyRecorderView.swift; sourceTree = "<group>"; };
+		B10006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10008 /* ActionCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCoordinatorTests.swift; sourceTree = "<group>"; };
+		B10012 /* SettingsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorTests.swift; sourceTree = "<group>"; };
+		B10013 /* ResultPanelControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPanelControllerTests.swift; sourceTree = "<group>"; };
+		B10014 /* ProviderCancellationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCancellationTests.swift; sourceTree = "<group>"; };
+		B10098 /* EnLLMAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnLLMAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10099 /* EnLLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnLLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10006 /* EnLLMCore in Frameworks */,
+				A10007 /* EnLLMPlatform in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D10001 = {
+			isa = PBXGroup;
+			children = (
+				D10002 /* EnLLMApp */,
+				D10006 /* EnLLMAppTests */,
+				D10007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D10002 /* EnLLMApp */ = {
+			isa = PBXGroup;
+			children = (
+				D10003 /* App */,
+				D10004 /* Presentation */,
+				D10005 /* Resources */,
+			);
+			path = EnLLMApp;
+			sourceTree = "<group>";
+		};
+		D10003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* EnLLMApp.swift */,
+				B10002 /* AppComposition.swift */,
+				B10003 /* ActionCoordinator.swift */,
+				B10010 /* SettingsCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10004 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B10004 /* MenuBarView.swift */,
+				B10005 /* SettingsView.swift */,
+				B10011 /* HotkeyRecorderView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D10005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10006 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D10006 /* EnLLMAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B10008 /* ActionCoordinatorTests.swift */,
+				B10012 /* SettingsCoordinatorTests.swift */,
+				B10013 /* ResultPanelControllerTests.swift */,
+				B10014 /* ProviderCancellationTests.swift */,
+			);
+			path = EnLLMAppTests;
+			sourceTree = "<group>";
+		};
+		D10007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B10099 /* EnLLM.app */,
+				B10098 /* EnLLMAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10001 /* EnLLMApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10003 /* Build configuration list for PBXNativeTarget "EnLLMApp" */;
+			buildPhases = (
+				C10002 /* Sources */,
+				C10001 /* Frameworks */,
+				C10003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnLLMApp;
+			packageProductDependencies = (
+				E10001 /* EnLLMCore */,
+				E10003 /* EnLLMPlatform */,
+			);
+			productName = EnLLM;
+			productReference = B10099 /* EnLLM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F10002 /* EnLLMAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10004 /* Build configuration list for PBXNativeTarget "EnLLMAppTests" */;
+			buildPhases = (
+				C10004 /* Sources */,
+				C10005 /* Frameworks */,
+				C10006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				T10001 /* PBXTargetDependency */,
+			);
+			name = EnLLMAppTests;
+			productName = EnLLMAppTests;
+			productReference = B10098 /* EnLLMAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					F10001 = {
+						CreatedOnToolsVersion = 26.3;
+						ProvisioningStyle = Automatic;
+					};
+					F10002 = {
+						CreatedOnToolsVersion = 26.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F10001;
+					};
+				};
+			};
+			buildConfigurationList = G10001 /* Build configuration list for PBXProject "EnLLM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D10001;
+			packageReferences = (
+				E10002 /* XCLocalSwiftPackageReference "." */,
+			);
+			productRefGroup = D10007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10001 /* EnLLMApp */,
+				F10002 /* EnLLMAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* EnLLMApp.swift in Sources */,
+				A10002 /* AppComposition.swift in Sources */,
+				A10003 /* ActionCoordinator.swift in Sources */,
+				A10004 /* MenuBarView.swift in Sources */,
+				A10005 /* SettingsView.swift in Sources */,
+				A10010 /* SettingsCoordinator.swift in Sources */,
+				A10011 /* HotkeyRecorderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10008 /* ActionCoordinatorTests.swift in Sources */,
+				A10012 /* SettingsCoordinatorTests.swift in Sources */,
+				A10013 /* ResultPanelControllerTests.swift in Sources */,
+				A10014 /* ProviderCancellationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		T10001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10001 /* EnLLMApp */;
+			targetProxy = P10001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		H10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		H10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		H10003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66ZYDU2788;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnLLMApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radpozniakov.enllm;
+				PRODUCT_MODULE_NAME = EnLLMApp;
+				PRODUCT_NAME = EnLLM;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		H10004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66ZYDU2788;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = EnLLMApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radpozniakov.enllm;
+				PRODUCT_MODULE_NAME = EnLLMApp;
+				PRODUCT_NAME = EnLLM;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		H10005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66ZYDU2788;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radpozniakov.enllm.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnLLM.app/Contents/MacOS/EnLLM";
+			};
+			name = Debug;
+		};
+		H10006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66ZYDU2788;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radpozniakov.enllm.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnLLM.app/Contents/MacOS/EnLLM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10001 /* Build configuration list for PBXProject "EnLLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10001 /* Debug */,
+				H10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G10003 /* Build configuration list for PBXNativeTarget "EnLLMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10003 /* Debug */,
+				H10004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G10004 /* Build configuration list for PBXNativeTarget "EnLLMAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10005 /* Debug */,
+				H10006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E10002 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ".";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E10001 /* EnLLMCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E10002 /* XCLocalSwiftPackageReference "." */;
+			productName = EnLLMCore;
+		};
+		E10003 /* EnLLMPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E10002 /* XCLocalSwiftPackageReference "." */;
+			productName = EnLLMPlatform;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F10000 /* Project object */;
+}

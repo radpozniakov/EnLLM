@@ -1,0 +1,24 @@
+{
+  "id": "C-01",
+  "corpusVersion": 1,
+  "action": "correction",
+  "contentType": "English prose with known grammar and spelling errors",
+  "language": "en",
+  "input": "The quarterly widget report were finished yesterday, but we still havent recieved the final numbers from the warehouse team. Their planning to send it tommorow, and me and the analyst will reviews it befor the meeting.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "preserveLanguage": true,
+    "expectedChanges": [
+      "subject-verb agreement: 'report were' -> 'report was'",
+      "contraction: 'havent' -> \"haven't\"",
+      "spelling: 'recieved' -> 'received'",
+      "homophone: 'Their planning' -> \"They're planning\"",
+      "spelling: 'tommorow' -> 'tomorrow'",
+      "pronoun/agreement: 'me and the analyst will reviews' -> 'the analyst and I will review'",
+      "spelling: 'befor' -> 'before'"
+    ]
+  },
+  "notes": "Synthetic content only. Deliberately seeded grammar/spelling errors about a fictional widget report; no personal or real data."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "T-01",
+  "corpusVersion": 1,
+  "action": "translation",
+  "contentType": "English prose",
+  "language": "en",
+  "input": "Please review the attached proposal before our call tomorrow. If the budget section looks reasonable, we can move forward with the vendor next week.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "targetLanguage": "uk"
+  },
+  "notes": "Synthetic content only. The result must be a Ukrainian translation of the meaning, with no English commentary and no source text echoed back."
+}

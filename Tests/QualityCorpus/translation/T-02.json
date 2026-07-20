@@ -1,0 +1,25 @@
+{
+  "id": "T-02",
+  "corpusVersion": 1,
+  "action": "translation",
+  "contentType": "Multiline Markdown",
+  "language": "en",
+  "input": "## Onboarding Checklist\n\nComplete the following steps on your first day:\n\n1. Set up your account on the [internal portal](https://example.com/portal)\n2. Install the required tools\n3. Read the team handbook\n\n> Reach out in the team channel if anything is unclear.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "targetLanguage": "uk",
+    "structural": [
+      "level-2 heading marker '## ' retained on the translated heading",
+      "ordered list with '1.' '2.' '3.' markers retained",
+      "Markdown link target '[...](https://example.com/portal)' retained with the same URL (link text may be translated)",
+      "blockquote '> ' marker retained on the translated quote",
+      "blank-line paragraph separation retained"
+    ]
+  },
+  "protectedTokens": [
+    "https://example.com/portal"
+  ],
+  "notes": "Synthetic content only. Prose is translated to Ukrainian while the Markdown structure (heading marker, ordered list markers, link URL, blockquote marker) is retained. The link URL must appear unchanged in the result."
+}

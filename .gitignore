@@ -1,0 +1,14 @@
+refs/
+.DS_Store
+.pi-subagents/
+.build/
+.xcode-build/
+.local-app/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.omc
+progress.txt
+
+# Local AI tooling config
+.pi/

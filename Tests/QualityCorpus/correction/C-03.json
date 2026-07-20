@@ -1,0 +1,16 @@
+{
+  "id": "C-03",
+  "corpusVersion": 1,
+  "action": "correction",
+  "contentType": "Already-correct English prose",
+  "language": "en",
+  "input": "Thank you for the update. The revised schedule works well for our team, and we will confirm the final headcount by Friday afternoon.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": true,
+    "preserveLanguage": true,
+    "expectedChanges": []
+  },
+  "notes": "Synthetic content only. Grammatically clean input; the correction result must be returned unchanged (no gratuitous rewrites)."
+}

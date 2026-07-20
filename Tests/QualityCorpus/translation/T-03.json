@@ -1,0 +1,25 @@
+{
+  "id": "T-03",
+  "corpusVersion": 1,
+  "action": "translation",
+  "contentType": "Technical prose and code",
+  "language": "en",
+  "input": "To reproduce the issue, call fetchUserProfile(id:) with an empty string. The function throws ValidationError, which is logged by the DiagnosticRecorder. You can reproduce it locally with:\n\n```swift\nlet result = try client.fetchUserProfile(id: \"\")\n```\n\nThe fix will ship in the next patch release.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": false,
+    "targetLanguage": "uk",
+    "structural": [
+      "fenced ```swift code block retained verbatim including the language tag",
+      "blank-line paragraph separation retained"
+    ]
+  },
+  "protectedTokens": [
+    "fetchUserProfile(id:)",
+    "ValidationError",
+    "DiagnosticRecorder",
+    "let result = try client.fetchUserProfile(id: \"\")"
+  ],
+  "notes": "Synthetic content only. Prose is translated to Ukrainian while code identifiers, the type names, and the fenced Swift snippet remain unchanged. Every protected token is a literal substring of the input."
+}

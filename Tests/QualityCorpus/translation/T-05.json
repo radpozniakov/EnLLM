@@ -1,0 +1,15 @@
+{
+  "id": "T-05",
+  "corpusVersion": 1,
+  "action": "translation",
+  "contentType": "Already-Ukrainian text",
+  "language": "uk",
+  "input": "Дякуємо за ваш відгук. Ми оновимо документацію цього тижня та повідомимо вам, коли зміни будуть готові.",
+  "invariants": {
+    "resultOnly": true,
+    "meaningPreserved": true,
+    "returnedUnchanged": true,
+    "targetLanguage": "uk"
+  },
+  "notes": "Synthetic content only. Input is already Ukrainian; the translation result must be returned unchanged (no round-trip through another language, no commentary)."
+}
